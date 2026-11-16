@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # ============================================================
 # server.py
@@ -177,3 +178,39 @@ if __name__ == "__main__":
     )
     
 
+=======
+HTML_TEMPLATE = """
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Web Server - Praktikum 1</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #0f172a; color: #f8fafc; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background: #1e293b; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.5); width: 500px; }
+        h2 { text-align: center; color: #38bdf8; margin-bottom: 20px; font-size: 18px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 10px; text-align: left; border-bottom: 1px solid #334155; font-size: 14px; }
+        th { color: #94a3b8; width: 35%; }
+        td { color: #f1f5f9; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <!-- Ubah bagian judul ini agar sama persis seperti di jobsheet -->
+        <h2>Flask Web Server Aktif - 5312422021 (Organization Fork)</h2>
+        <p style="text-align: center; color: #94a3b8; font-size: 13px; margin-top: -10px; margin-bottom: 20px;">Aplikasi berjalan dengan baik pada perangkat berikut.</p>
+        <table>
+            <tr><th>Author</th><td>{{ author }}</td></tr>
+            <tr><th>Environment</th><td>{{ env }}</td></tr>
+            <tr><th>Hostname</th><td>{{ hostname }}</td></tr>
+            <tr><th>Sistem Operasi</th><td>{{ os_info }}</td></tr>
+            <tr><th>Arsitektur</th><td>{{ architecture }}</td></tr>
+            <tr><th>Versi Python</th><td>{{ python_version }}</td></tr>
+            <tr><th>Waktu Server</th><td>{{ server_time }}</td></tr>
+        </table>
+    </div>
+</body>
+</html>
+"""
+>>>>>>> 4a73522 (Menambahkan Dockerfile, requirements.txt, dan server.py untuk containerization)
